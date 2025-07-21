@@ -33,7 +33,7 @@ A powerful **unsupervised text summarization toolkit** that implements and compa
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/Text_Summarization.git
+git clone https://github.com/76542/Text_Summarizer.git
 cd Text_Summarization
 pip install -r requirements.txt
 ```
