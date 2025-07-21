@@ -49,22 +49,47 @@ Arguments:
 
 ## 🧩 Project Structure
 ```bash
-comparative-text-summarizer/
-├── algorithms/
-│   ├── textrank.py
-│   ├── lexrank.py
-│   ├── lsa.py
-│   └── sumbasic.py
-├── evaluation/
-│   ├── rouge.py
-│   ├── similarity.py
-│   └── compression.py
+Text_Summarization/
 ├── data/
-│   └── sample_text.txt
-├── outputs/
-├── main.py
-├── requirements.txt
-└── README.md
+│   ├── docs/                       # Input documents
+│   │   └── news_1.txt
+│   ├── references/                # Reference summaries for evaluation
+│   │   └── news_1_reference.txt
+│   └── stopwords.txt              # Stopword list
+│
+├── evaluation/                    # Evaluation scores and visualizations
+│   ├── combined_evaluation_plot.png
+│   ├── f1_plot.png
+│   ├── plot_bar.png
+│   ├── rouge_plot.png
+│   └── rouge_scores.txt
+│
+├── models/                        # Supporting data/models
+│   └── idfs_model.txt
+│
+├── outputs/                       # Generated summaries
+│   ├── baseline/
+│   ├── kmedoid/
+│   ├── lexrank/
+│   └── lsa/
+│       ├── summary_0.txt
+│       └── summary_1.txt
+│
+├── scripts/                       # Core algorithm scripts
+│   ├── baseline_summarizer.py
+│   ├── Clustering.py
+│   ├── evaluate_rouge.py
+│   ├── idf_model.py
+│   ├── Kmedoid_summarize.py
+│   ├── LexRank.py
+│   ├── LSA_summary.py
+│   ├── plot_bar_combined.py
+│   ├── plot_bar_f1.py
+│   └── plot_bar.py
+│
+├── README.md
+└── requirements.txt
+
 ```
 
 ## 🎯 Future Improvements
