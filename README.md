@@ -33,8 +33,8 @@ A powerful **unsupervised text summarization toolkit** that implements and compa
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/comparative-text-summarizer.git
-cd comparative-text-summarizer
+git clone https://github.com/yourusername/Text_Summarization.git
+cd Text_Summarization
 pip install -r requirements.txt
 ```
 ## ⚡ Usage
